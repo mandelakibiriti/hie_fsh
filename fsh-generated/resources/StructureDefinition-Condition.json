@@ -1,0 +1,208 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Condition",
+  "url": "http://myid.org/StructureDefinition/Condition",
+  "name": "Condition",
+  "title": "Condition",
+  "status": "draft",
+  "description": "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition",
+        "short": "Condition",
+        "definition": "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern."
+      },
+      {
+        "id": "Condition.identifier",
+        "path": "Condition.identifier",
+        "short": "External Ids for this condition",
+        "definition": "Business identifiers assigned to this condition by the performer or other systems which remain constant as the resource is updated and propagates from server to server.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Condition.category",
+        "path": "Condition.category",
+        "short": "problem-list-item | encounter-diagnosis",
+        "definition": "A category assigned to the condition.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/condition-category"
+        }
+      },
+      {
+        "id": "Condition.severity",
+        "path": "Condition.severity",
+        "short": "Subjective severity of condition",
+        "definition": "A subjective assessment of the severity of the condition as evaluated by the clinician.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/condition-severity"
+        }
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "short": "Identification of the condition, problem or diagnosis",
+        "definition": "Identification of the condition, problem or diagnosis.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/condition-code"
+        }
+      },
+      {
+        "id": "Condition.bodySite",
+        "path": "Condition.bodySite",
+        "short": "Anatomical location, if relevant",
+        "definition": "The anatomical location where this condition manifests itself.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
+        }
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "short": "Who has the condition?",
+        "definition": "Indicates the patient or group who the condition record is associated with.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Condition.encounter",
+        "path": "Condition.encounter",
+        "short": "Encounter created as part of",
+        "definition": "The Encounter during which this Condition was created or to which the creation of this record is tightly associated.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
+            ]
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "short": "Estimated or actual date,  date-time, or age",
+        "definition": "Estimated or actual date or date-time  the condition began, in the opinion of the clinician.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Condition.abatement[x]",
+        "path": "Condition.abatement[x]",
+        "short": "When in resolution/remission",
+        "definition": "The date or estimated date that the condition resolved or went into remission. This is called \"abatement\" because of the many overloaded connotations associated with \"remission\" or \"resolution\" - Conditions are never really resolved, but they can abate.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note",
+        "short": "Additional information about the Condition",
+        "definition": "Additional information about the Condition. This is a general notes/comments entry  for description of the Condition, its diagnosis and prognosis.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      }
+    ]
+  }
+}

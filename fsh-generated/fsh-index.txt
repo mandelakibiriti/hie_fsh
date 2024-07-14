@@ -1,0 +1,10 @@
+Output File                                 Name               Type      FSH File               Lines
+PatientProfile-Patient.json                 Patient            Instance  patientExample.fsh     1 - 37
+StructureDefinition-Composition.json        Composition        Resource  composition.fsh        1 - 24
+StructureDefinition-Condition.json          Condition          Resource  conditions.fsh         1 - 21
+StructureDefinition-Encounter.json          Encounter          Resource  encounter.fsh          1 - 33
+StructureDefinition-Medication.json         Medication         Resource  medication.fsh         1 - 14
+StructureDefinition-MedicationRequest.json  MedicationRequest  Resource  medicationRequest.fsh  1 - 38
+StructureDefinition-Observation.json        Observation        Resource  observation.fsh        1 - 35
+StructureDefinition-PatientProfile.json     Patient            Resource  patient.fsh            1 - 32
+StructureDefinition-ServiceRequest.json     ServiceRequest     Resource  serviceRequest.fsh     1 - 41

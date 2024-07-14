@@ -1,0 +1,130 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Medication",
+  "url": "http://myid.org/StructureDefinition/Medication",
+  "name": "Medication",
+  "title": "Medication",
+  "status": "draft",
+  "description": "This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication",
+        "path": "Medication",
+        "short": "Medication",
+        "definition": "This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use."
+      },
+      {
+        "id": "Medication.identifier",
+        "path": "Medication.identifier",
+        "short": "Business identifier for this medication",
+        "definition": "Business identifier for this medication.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Medication.code",
+        "path": "Medication.code",
+        "short": "Codes that identify this medication",
+        "definition": "A code (or set of codes) that specify this medication, or a textual description if no code is available. Usage note: This could be a standard medication code such as a code from RxNorm, SNOMED CT, IDMP etc. It could also be a national or local formulary code, optionally with translations to other code systems.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-codes"
+        }
+      },
+      {
+        "id": "Medication.amount",
+        "path": "Medication.amount",
+        "short": "Amount of drug in package",
+        "definition": "Specific amount of the drug in the packaged product.  For example, when specifying a product that has the same strength (For example, Insulin glargine 100 unit per mL solution for injection), this attribute provides additional clarification of the package amount (For example, 3 mL, 10mL, etc.).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "id": "Medication.ingredient",
+        "path": "Medication.ingredient",
+        "short": "Active or inactive ingredient",
+        "definition": "Identifies a particular constituent of interest in the product.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.item[x]",
+        "path": "Medication.ingredient.item[x]",
+        "short": "The actual ingredient or content",
+        "definition": "The actual ingredient - either a substance (simple ingredient) or another medication of a medication.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Substance",
+              "http://hl7.org/fhir/StructureDefinition/Medication"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.isActive",
+        "path": "Medication.ingredient.isActive",
+        "short": "Active ingredient indicator",
+        "definition": "Indication of whether this ingredient affects the therapeutic action of the drug.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Medication.batch",
+        "path": "Medication.batch",
+        "short": "Details about packaged medications",
+        "definition": "Information that only applies to packages (not products).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      }
+    ]
+  }
+}

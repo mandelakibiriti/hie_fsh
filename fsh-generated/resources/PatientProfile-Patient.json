@@ -1,0 +1,78 @@
+{
+  "resourceType": "PatientProfile",
+  "id": "Patient",
+  "identifier": [
+    {
+      "id": "1"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "John"
+      ],
+      "family": "Pond"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "00200"
+      ],
+      "use": "home",
+      "type": "postal",
+      "city": "Nairobi",
+      "country": "Kenya"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone"
+    }
+  ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "code": "BP",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+              "display": "Billing contact person"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "text": "john doe",
+        "use": "official"
+      },
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mkjk@as.com",
+          "use": "home"
+        }
+      ],
+      "address": {
+        "text": "00200",
+        "use": "home",
+        "type": "postal",
+        "city": "Nairobi",
+        "country": "Kenya"
+      },
+      "gender": "male"
+    }
+  ],
+  "active": true,
+  "gender": "male",
+  "birthDate": "1993-12-27",
+  "deceasedBoolean": false,
+  "maritalStatus": {
+    "coding": [
+      {
+        "code": "unknown"
+      }
+    ]
+  }
+}

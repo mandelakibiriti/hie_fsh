@@ -1,0 +1,53 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "my.id",
+  "url": "http://myid.org/ImplementationGuide/my.id",
+  "version": "0.10",
+  "name": "HIE_Kenya_IG",
+  "status": "draft",
+  "publisher": "MyPublisher",
+  "contact": [
+    {
+      "name": "MyPublisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://my-publisher.org"
+        }
+      ]
+    }
+  ],
+  "packageId": "my.id",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "trial-use"
+      },
+      {
+        "code": "autoload-resources",
+        "value": "false"
+      }
+    ]
+  }
+}

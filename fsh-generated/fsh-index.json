@@ -1,0 +1,74 @@
+[
+  {
+    "outputFile": "PatientProfile-Patient.json",
+    "fshName": "Patient",
+    "fshType": "Instance",
+    "fshFile": "patientExample.fsh",
+    "startLine": 1,
+    "endLine": 37
+  },
+  {
+    "outputFile": "StructureDefinition-Composition.json",
+    "fshName": "Composition",
+    "fshType": "Resource",
+    "fshFile": "composition.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-Condition.json",
+    "fshName": "Condition",
+    "fshType": "Resource",
+    "fshFile": "conditions.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-Encounter.json",
+    "fshName": "Encounter",
+    "fshType": "Resource",
+    "fshFile": "encounter.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-Medication.json",
+    "fshName": "Medication",
+    "fshType": "Resource",
+    "fshFile": "medication.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-MedicationRequest.json",
+    "fshName": "MedicationRequest",
+    "fshType": "Resource",
+    "fshFile": "medicationRequest.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-Observation.json",
+    "fshName": "Observation",
+    "fshType": "Resource",
+    "fshFile": "observation.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
+    "outputFile": "StructureDefinition-PatientProfile.json",
+    "fshName": "Patient",
+    "fshType": "Resource",
+    "fshFile": "patient.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-ServiceRequest.json",
+    "fshName": "ServiceRequest",
+    "fshType": "Resource",
+    "fshFile": "serviceRequest.fsh",
+    "startLine": 1,
+    "endLine": 41
+  }
+]
