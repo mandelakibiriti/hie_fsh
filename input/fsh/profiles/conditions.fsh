@@ -5,7 +5,6 @@ Title: "Condition"
 Description: "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern."
 
 * identifier 0..* SU Identifier "External Ids for this condition" "Business identifiers assigned to this condition by the performer or other systems which remain constant as the resource is updated and propagates from server to server."
-
 * category 0..* CodeableConcept "problem-list-item | encounter-diagnosis" "A category assigned to the condition."
 * category from http://hl7.org/fhir/ValueSet/condition-category (extensible)
 * severity 0..1 CodeableConcept "Subjective severity of condition" "A subjective assessment of the severity of the condition as evaluated by the clinician."

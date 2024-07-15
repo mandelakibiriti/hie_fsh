@@ -1,17 +1,97 @@
 [
   {
+    "outputFile": "CodeSystem-KHTS.A.json",
+    "fshName": "KHTS.A",
+    "fshType": "CodeSystem",
+    "fshFile": "codeSystems/kenya_counties.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "CodeSystem-KNHTS.CLMSACCOMODATIONTYPE.json",
+    "fshName": "KNHTS.CLMSACCOMODATIONTYPE",
+    "fshType": "CodeSystem",
+    "fshFile": "codeSystems/claims.fsh",
+    "startLine": 116,
+    "endLine": 136
+  },
+  {
+    "outputFile": "CodeSystem-KNHTS.CLMSDISP.json",
+    "fshName": "KNHTS.CLMSDISP",
+    "fshType": "CodeSystem",
+    "fshFile": "codeSystems/claims.fsh",
+    "startLine": 139,
+    "endLine": 151
+  },
+  {
+    "outputFile": "CodeSystem-KNHTS.CLMSRSPSTS.json",
+    "fshName": "KNHTS.CLMSRSPSTS",
+    "fshType": "CodeSystem",
+    "fshFile": "codeSystems/claims.fsh",
+    "startLine": 24,
+    "endLine": 42
+  },
+  {
+    "outputFile": "CodeSystem-KNHTS.CLMSSBTYPS.json",
+    "fshName": "KNHTS.CLMSSBTYPS",
+    "fshType": "CodeSystem",
+    "fshFile": "codeSystems/claims.fsh",
+    "startLine": 60,
+    "endLine": 95
+  },
+  {
+    "outputFile": "CodeSystem-KNHTS.CLMSTS.json",
+    "fshName": "KNHTS.CLMSTS",
+    "fshType": "CodeSystem",
+    "fshFile": "codeSystems/claims.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "CodeSystem-KNHTS.CLMSTYPS.json",
+    "fshName": "KNHTS.CLMSTYPS",
+    "fshType": "CodeSystem",
+    "fshFile": "codeSystems/claims.fsh",
+    "startLine": 47,
+    "endLine": 57
+  },
+  {
+    "outputFile": "CodeSystem-KNHTS.CLMSZONE.json",
+    "fshName": "KNHTS.CLMSZONE",
+    "fshType": "CodeSystem",
+    "fshFile": "codeSystems/claims.fsh",
+    "startLine": 98,
+    "endLine": 113
+  },
+  {
     "outputFile": "PatientProfile-Patient.json",
     "fshName": "Patient",
     "fshType": "Instance",
-    "fshFile": "patientExample.fsh",
+    "fshFile": "profiles/patientExample.fsh",
     "startLine": 1,
     "endLine": 37
+  },
+  {
+    "outputFile": "StructureDefinition-Claim-ke.json",
+    "fshName": "ClaimProfile",
+    "fshType": "Profile",
+    "fshFile": "profiles/claims.fsh",
+    "startLine": 3,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-ClaimsResponse-ke.json",
+    "fshName": "ClaimsResponseProfile",
+    "fshType": "Profile",
+    "fshFile": "profiles/claims_response.fsh",
+    "startLine": 1,
+    "endLine": 9
   },
   {
     "outputFile": "StructureDefinition-Composition.json",
     "fshName": "Composition",
     "fshType": "Resource",
-    "fshFile": "composition.fsh",
+    "fshFile": "profiles/composition.fsh",
     "startLine": 1,
     "endLine": 24
   },
@@ -19,15 +99,15 @@
     "outputFile": "StructureDefinition-Condition.json",
     "fshName": "Condition",
     "fshType": "Resource",
-    "fshFile": "conditions.fsh",
+    "fshFile": "profiles/conditions.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-Encounter.json",
     "fshName": "Encounter",
     "fshType": "Resource",
-    "fshFile": "encounter.fsh",
+    "fshFile": "profiles/encounter.fsh",
     "startLine": 1,
     "endLine": 33
   },
@@ -35,7 +115,7 @@
     "outputFile": "StructureDefinition-Medication.json",
     "fshName": "Medication",
     "fshType": "Resource",
-    "fshFile": "medication.fsh",
+    "fshFile": "profiles/medication.fsh",
     "startLine": 1,
     "endLine": 14
   },
@@ -43,7 +123,7 @@
     "outputFile": "StructureDefinition-MedicationRequest.json",
     "fshName": "MedicationRequest",
     "fshType": "Resource",
-    "fshFile": "medicationRequest.fsh",
+    "fshFile": "profiles/medicationRequest.fsh",
     "startLine": 1,
     "endLine": 38
   },
@@ -51,7 +131,7 @@
     "outputFile": "StructureDefinition-Observation.json",
     "fshName": "Observation",
     "fshType": "Resource",
-    "fshFile": "observation.fsh",
+    "fshFile": "profiles/observation.fsh",
     "startLine": 1,
     "endLine": 35
   },
@@ -59,7 +139,7 @@
     "outputFile": "StructureDefinition-PatientProfile.json",
     "fshName": "Patient",
     "fshType": "Resource",
-    "fshFile": "patient.fsh",
+    "fshFile": "profiles/patient.fsh",
     "startLine": 1,
     "endLine": 32
   },
@@ -67,8 +147,40 @@
     "outputFile": "StructureDefinition-ServiceRequest.json",
     "fshName": "ServiceRequest",
     "fshType": "Resource",
-    "fshFile": "serviceRequest.fsh",
+    "fshFile": "profiles/serviceRequest.fsh",
     "startLine": 1,
     "endLine": 41
+  },
+  {
+    "outputFile": "StructureDefinition-kenya-counties-extension.json",
+    "fshName": "KenyaCountiesExtension",
+    "fshType": "Extension",
+    "fshFile": "extensions/claims.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "ValueSet-ClaimsResponseVS.json",
+    "fshName": "ClaimsResponseVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/claimsVS.fsh",
+    "startLine": 21,
+    "endLine": 38
+  },
+  {
+    "outputFile": "ValueSet-ClaimsStatusVS.json",
+    "fshName": "ClaimsStatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/claimsVS.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-kenyaCountiesVS.json",
+    "fshName": "kenyaCountiesVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSets/kenya_countiesVS.fsh",
+    "startLine": 1,
+    "endLine": 10
   }
 ]
