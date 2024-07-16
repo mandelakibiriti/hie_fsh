@@ -25,22 +25,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/Claim-ke-Profile"
-        },
-        "name": "Claims",
-        "description": "Standardise the format of electronic claims / pre-authorizations / pre-determinations.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ClaimsResponse-ke-Profile"
-        },
-        "name": "Claims Response",
-        "description": "Standardize the format of electronic claims responses.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/ClaimsResponseVS"
         },
         "name": "Claims Response status",
@@ -57,9 +41,25 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/Claim-ke-Profile"
+        },
+        "name": "Claims_ke_Profile",
+        "description": "Standardise the format of electronic claims / pre-authorizations / pre-determinations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ClaimsResponse-ke-Profile"
+        },
+        "name": "Claims_Response_ke_Profile",
+        "description": "Standardize the format of electronic claims responses.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/Composition-ke-Profile"
         },
-        "name": "Composition",
+        "name": "Composition_ke_Profile",
         "description": "A set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition must be the first entry in a Bundle where Bundle.type=document, and any other resources referenced from Composition must be included as subsequent entries in the Bundle (for example Patient, Practitioner, Encounter, etc.).",
         "exampleBoolean": false
       },
@@ -67,7 +67,7 @@
         "reference": {
           "reference": "StructureDefinition/Condition-ke-Profile"
         },
-        "name": "Condition",
+        "name": "Condition_ke_Profile",
         "description": "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.",
         "exampleBoolean": false
       },
@@ -161,25 +161,25 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/Medication-ke-Profile"
+          "reference": "StructureDefinition/MedicationRequest-ke-Profile"
         },
-        "name": "Medication",
-        "description": "This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.",
+        "name": "MedicationRequest_ke_Profile",
+        "description": "An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called \"MedicationRequest\" rather than \"MedicationPrescription\" or \"MedicationOrder\" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/MedicationRequest-ke-Profile"
+          "reference": "StructureDefinition/Medication-ke-Profile"
         },
-        "name": "MedicationRequest",
-        "description": "An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called \"MedicationRequest\" rather than \"MedicationPrescription\" or \"MedicationOrder\" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.",
+        "name": "Medication_ke_Profile",
+        "description": "This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/Observation-ke-Profile"
         },
-        "name": "Observation",
+        "name": "Observation_ke_Profile",
         "description": "Measurements and simple assertions made about a patient, device or other subject.",
         "exampleBoolean": false
       },
@@ -203,7 +203,7 @@
         "reference": {
           "reference": "StructureDefinition/ServiceRequest-ke-Profile"
         },
-        "name": "ServiceRequest-ke-Profile",
+        "name": "ServiceRequest_ke_Profile",
         "description": "A record of a request for service such as diagnostic investigations, treatments, or operations to be performed.",
         "exampleBoolean": false
       }
