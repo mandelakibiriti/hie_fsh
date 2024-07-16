@@ -1,9 +1,9 @@
 Alias: $kenya-counties-extension = http://example.org/StructureDefinition/kenya-counties-extension
 
-Profile: ClaimProfile
+Profile: Claim_ke_Profile
 Parent: Claim
-Id: Claim-ke
-Title: "Claims"
+Id: Claim-ke-Profile
+Title: "Claims_ke_Profile"
 Description: "Standardise the format of electronic claims / pre-authorizations / pre-determinations."
 
 * extension contains KenyaCountiesExtension named county 0..1 

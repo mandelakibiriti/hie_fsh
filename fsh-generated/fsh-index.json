@@ -64,92 +64,92 @@
     "endLine": 113
   },
   {
-    "outputFile": "PatientProfile-Patient.json",
-    "fshName": "Patient",
+    "outputFile": "Patient-PatientExample.json",
+    "fshName": "PatientExample",
     "fshType": "Instance",
-    "fshFile": "profiles/patientExample.fsh",
+    "fshFile": "examples/patientExample.fsh",
     "startLine": 1,
     "endLine": 37
   },
   {
-    "outputFile": "StructureDefinition-Claim-ke.json",
-    "fshName": "ClaimProfile",
+    "outputFile": "StructureDefinition-Claim-ke-Profile.json",
+    "fshName": "Claim_ke_Profile",
     "fshType": "Profile",
     "fshFile": "profiles/claims.fsh",
     "startLine": 3,
     "endLine": 21
   },
   {
-    "outputFile": "StructureDefinition-ClaimsResponse-ke.json",
-    "fshName": "ClaimsResponseProfile",
+    "outputFile": "StructureDefinition-ClaimsResponse-ke-Profile.json",
+    "fshName": "ClaimsResponse_ke_Profile",
     "fshType": "Profile",
     "fshFile": "profiles/claims_response.fsh",
     "startLine": 1,
     "endLine": 9
   },
   {
-    "outputFile": "StructureDefinition-Composition.json",
-    "fshName": "Composition",
-    "fshType": "Resource",
+    "outputFile": "StructureDefinition-Composition-ke-Profile.json",
+    "fshName": "Composition_ke_Profile",
+    "fshType": "Profile",
     "fshFile": "profiles/composition.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 28
   },
   {
-    "outputFile": "StructureDefinition-Condition.json",
-    "fshName": "Condition",
-    "fshType": "Resource",
+    "outputFile": "StructureDefinition-Condition-ke-Profile.json",
+    "fshName": "Condition_ke_Profile",
+    "fshType": "Profile",
     "fshFile": "profiles/conditions.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 26
   },
   {
-    "outputFile": "StructureDefinition-Encounter.json",
-    "fshName": "Encounter",
-    "fshType": "Resource",
+    "outputFile": "StructureDefinition-Encounter-ke-Profile.json",
+    "fshName": "Encounter_ke_profile",
+    "fshType": "Profile",
     "fshFile": "profiles/encounter.fsh",
     "startLine": 1,
-    "endLine": 33
+    "endLine": 47
   },
   {
-    "outputFile": "StructureDefinition-Medication.json",
-    "fshName": "Medication",
-    "fshType": "Resource",
+    "outputFile": "StructureDefinition-Medication-ke-Profile.json",
+    "fshName": "Medication_ke_Profile",
+    "fshType": "Profile",
     "fshFile": "profiles/medication.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 21
   },
   {
-    "outputFile": "StructureDefinition-MedicationRequest.json",
-    "fshName": "MedicationRequest",
-    "fshType": "Resource",
+    "outputFile": "StructureDefinition-MedicationRequest-ke-Profile.json",
+    "fshName": "MedicationRequest_ke_Profile",
+    "fshType": "Profile",
     "fshFile": "profiles/medicationRequest.fsh",
     "startLine": 1,
-    "endLine": 38
+    "endLine": 57
   },
   {
-    "outputFile": "StructureDefinition-Observation.json",
-    "fshName": "Observation",
-    "fshType": "Resource",
+    "outputFile": "StructureDefinition-Observation-ke-Profile.json",
+    "fshName": "Observation_ke_Profile",
+    "fshType": "Profile",
     "fshFile": "profiles/observation.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 52
   },
   {
-    "outputFile": "StructureDefinition-PatientProfile.json",
-    "fshName": "Patient",
-    "fshType": "Resource",
+    "outputFile": "StructureDefinition-Patient-ke-Profile.json",
+    "fshName": "Patient_ke_Profile",
+    "fshType": "Profile",
     "fshFile": "profiles/patient.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 42
   },
   {
-    "outputFile": "StructureDefinition-ServiceRequest.json",
-    "fshName": "ServiceRequest",
-    "fshType": "Resource",
+    "outputFile": "StructureDefinition-ServiceRequest-ke-Profile.json",
+    "fshName": "ServiceRequest_ke_Profile",
+    "fshType": "Profile",
     "fshFile": "profiles/serviceRequest.fsh",
     "startLine": 1,
-    "endLine": 41
+    "endLine": 54
   },
   {
     "outputFile": "StructureDefinition-kenya-counties-extension.json",

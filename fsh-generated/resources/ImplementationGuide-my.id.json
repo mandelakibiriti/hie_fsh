@@ -22,7 +22,192 @@
     "4.0.1"
   ],
   "definition": {
-    "resource": [],
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/Claim-ke-Profile"
+        },
+        "name": "Claims",
+        "description": "Standardise the format of electronic claims / pre-authorizations / pre-determinations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ClaimsResponse-ke-Profile"
+        },
+        "name": "Claims Response",
+        "description": "Standardize the format of electronic claims responses.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ClaimsResponseVS"
+        },
+        "name": "Claims Response status",
+        "description": "Claims Response status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ClaimsStatusVS"
+        },
+        "name": "Claims status",
+        "description": "Claims status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Composition-ke-Profile"
+        },
+        "name": "Composition",
+        "description": "A set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition must be the first entry in a Bundle where Bundle.type=document, and any other resources referenced from Composition must be included as subsequent entries in the Bundle (for example Patient, Practitioner, Encounter, etc.).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Condition-ke-Profile"
+        },
+        "name": "Condition",
+        "description": "A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/kenyaCountiesVS"
+        },
+        "name": "Counties in Kenya",
+        "description": "Counties in Kenya",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Encounter-ke-Profile"
+        },
+        "name": "Encounter_ke_Profile",
+        "description": "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/kenya-counties-extension"
+        },
+        "name": "Extension for Kenya counties",
+        "description": "A code representing kenya counties",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KHTS.A"
+        },
+        "name": "KHTS.A CodeSystem for Counties in Kenya",
+        "description": "CodeSystem for KHTS.A Counties in Kenya",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KNHTS.CLMSTS"
+        },
+        "name": "KNHTS.CLMS CodeSystem for claim status",
+        "description": "CodeSystem for KNHTS Claim status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KNHTS.CLMSACCOMODATIONTYPE"
+        },
+        "name": "KNHTS.CLMSACCOMODATIONTYPE CodeSystem for claim accomodation type",
+        "description": "CodeSystem for KNHTS Claim Accomodation Types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KNHTS.CLMSDISP"
+        },
+        "name": "KNHTS.CLMSDISP CodeSystem for claim disposition",
+        "description": "CodeSystem for KNHTS Claim Disposition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KNHTS.CLMSRSPSTS"
+        },
+        "name": "KNHTS.CLMSRSP CodeSystem for claim response status",
+        "description": "CodeSystem for KNHTS Claim status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KNHTS.CLMSSBTYPS"
+        },
+        "name": "KNHTS.CLMSTPS CodeSystem for claim Sub-types",
+        "description": "CodeSystem for KNHTS Claim Sub-types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KNHTS.CLMSTYPS"
+        },
+        "name": "KNHTS.CLMSTPS CodeSystem for claim types",
+        "description": "CodeSystem for KNHTS Claim types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KNHTS.CLMSZONE"
+        },
+        "name": "KNHTS.CLMSZONE CodeSystem for claim Zones",
+        "description": "CodeSystem for KNHTS Claim Zones",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Medication-ke-Profile"
+        },
+        "name": "Medication",
+        "description": "This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicationRequest-ke-Profile"
+        },
+        "name": "MedicationRequest",
+        "description": "An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called \"MedicationRequest\" rather than \"MedicationPrescription\" or \"MedicationOrder\" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-ke-Profile"
+        },
+        "name": "Observation",
+        "description": "Measurements and simple assertions made about a patient, device or other subject.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/PatientExample"
+        },
+        "name": "PatientExample",
+        "description": "An example of a patient",
+        "exampleCanonical": "http://myid.org/StructureDefinition/Patient-ke-Profile"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Patient-ke-Profile"
+        },
+        "name": "Patient_ke_Profile",
+        "description": "Demographics and other administrative information about an individual or animal receiving care or other health-related services.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ServiceRequest-ke-Profile"
+        },
+        "name": "ServiceRequest-ke-Profile",
+        "description": "A record of a request for service such as diagnostic investigations, treatments, or operations to be performed.",
+        "exampleBoolean": false
+      }
+    ],
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",
@@ -43,10 +228,6 @@
       {
         "code": "releaselabel",
         "value": "trial-use"
-      },
-      {
-        "code": "autoload-resources",
-        "value": "false"
       }
     ]
   }

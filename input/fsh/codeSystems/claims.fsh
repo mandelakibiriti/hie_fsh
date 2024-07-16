@@ -50,7 +50,7 @@ Description:  "CodeSystem for KNHTS Claim types"
 
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = " KNHTS_CLMS_TYPS"
+* ^name = "KNHTS_CLMS_TYPS"
 
 * #CLMTPS01 "OUTPATIENT" "Claim for outpatient services."
 * #CLMTPS02 "INPATIENT" "Claim for in-patient services."

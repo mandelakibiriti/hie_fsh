@@ -1,5 +1,5 @@
-Instance: Patient
-InstanceOf: PatientProfile
+Instance: PatientExample
+InstanceOf: Patient_ke_Profile
 Description: "An example of a patient"
 * identifier
   * id = "1"
