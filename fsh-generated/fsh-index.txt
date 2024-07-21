@@ -7,6 +7,7 @@ CodeSystem-KNHTS.CLMSSBTYPS.json                       KNHTS.CLMSSBTYPS         
 CodeSystem-KNHTS.CLMSTS.json                           KNHTS.CLMSTS                  CodeSystem  codeSystems/claims.fsh          1 - 19
 CodeSystem-KNHTS.CLMSTYPS.json                         KNHTS.CLMSTYPS                CodeSystem  codeSystems/claims.fsh          47 - 57
 CodeSystem-KNHTS.CLMSZONE.json                         KNHTS.CLMSZONE                CodeSystem  codeSystems/claims.fsh          98 - 113
+Encounter-EncounterExample.json                        EncounterExample              Instance    examples/encounterExample.fsh   1 - 31
 Patient-PatientExample.json                            PatientExample                Instance    examples/patientExample.fsh     1 - 37
 StructureDefinition-Claim-ke-Profile.json              Claim_ke_Profile              Profile     profiles/claims.fsh             3 - 21
 StructureDefinition-ClaimsResponse-ke-Profile.json     ClaimsResponse_ke_Profile     Profile     profiles/claims_response.fsh    1 - 9

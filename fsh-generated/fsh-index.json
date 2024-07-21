@@ -64,6 +64,14 @@
     "endLine": 113
   },
   {
+    "outputFile": "Encounter-EncounterExample.json",
+    "fshName": "EncounterExample",
+    "fshType": "Instance",
+    "fshFile": "examples/encounterExample.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
     "outputFile": "Patient-PatientExample.json",
     "fshName": "PatientExample",
     "fshType": "Instance",

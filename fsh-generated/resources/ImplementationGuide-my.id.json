@@ -81,6 +81,14 @@
       },
       {
         "reference": {
+          "reference": "Encounter/EncounterExample"
+        },
+        "name": "EncounterExample",
+        "description": "An example of a patient",
+        "exampleCanonical": "http://myid.org/StructureDefinition/Encounter-ke-Profile"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/Encounter-ke-Profile"
         },
         "name": "Encounter_ke_Profile",
